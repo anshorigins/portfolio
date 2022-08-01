@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>Anshul Shakya Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='https://pbs.twimg.com/media/EYVxlOSXsAExOpX.jpg'/>
+        <div class='herosectionDetails'>
+          <h1>Anshul Shakya</h1>
+          <h3>Front End Web Developer</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p>Some basic details can be added hear regarding what realy known for. What you have done in your past job experience. Why do  you think you are doing well and more compatible with respect to other users and creators. Some basic details can be added hear regarding what you are realy known for. What you have done in your past job experience. Why do  you think you are doing well and more compatible with respect to other users and creators. Some basic details can be added hear regarding what you are realy known for. What you have done in your past job experience. Why do  you think you are doing well and more compatible with respect to other users and creators.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='https://www.svgrepo.com/show/120930/html.svg'>
+          <img title='CSS' src='https://www.svgrepo.com/show/134149/css.svg'>
+          <img title='javascript' src='https://www.svgrepo.com/show/355081/js.svg'>
+          <img title='Python' src='https://www.svgrepo.com/show/166811/py.svg'>
+          <img title='c++' src='https://www.svgrepo.com/show/353614/c-plusplus.svg'>
+          <img title='Python with Computer Vision' src='https://www.svgrepo.com/show/373337/python-opened.svg'>
+          <img title='MySql' src='https://www.svgrepo.com/show/306453/mysql.svg'>
+          <!-- <img title='Redux' src='./images/redux.svg'> -->
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='https://www.svgrepo.com/show/112930/py.svg'/>
+            <div class='projectDescription'>
+              <h4>Python and CV</h4>
+              <p>Give a background to green screen of video with python and computer vision coding.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='https://www.svgrepo.com/show/220427/html.svg'/>
+            <div class='projectDescription'>
+              <h4>HTML Site</h4>
+              <p>Made my own website.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some Comment!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
